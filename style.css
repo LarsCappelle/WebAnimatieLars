@@ -1,0 +1,310 @@
+body {
+    background: #c6cac2;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 80px;
+    color: #24379e;
+    margin: 20px;
+    letter-spacing: -4px;
+}
+
+h1 > span {
+    color: red;
+}
+
+h2 {
+    color: lightslategray;
+    position: relative;
+    top: -30px;
+    font-size: 15px;
+    width: 100px;
+    margin: 0 auto;
+    left: 220px;
+}
+
+h3 {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 25px;
+    position: relative;
+    top: -20px;
+}
+
+svg {
+    /*    enable-background:new 0 0 1920 1080;*/
+    /*    border: 3px red solid;*/
+    width: 700px;
+    height: 700px;
+    display: block;
+    margin: auto;
+}
+
+#svgdesktop {
+    display: block;
+}
+
+#svgmobile {
+    display: none;
+    width: 400px;
+}
+
+/*_____________________________________________________________[ groepen ]____________________________________________________*/
+
+/*[ 7 rechtsonder ]*/
+
+.horizontaal7rechtsonder {
+    x
+}
+
+.schuin7rechtsonder {
+    x
+}
+
+.schaduw7rechtsonder {
+    x
+}
+
+/*[ 4 onder ]*/
+
+.schuin4onder {
+    x
+}
+
+.verticaal4onder {
+    x
+}
+
+.horizontaal4onder {
+    x
+}
+
+.schaduw4onder {
+    x
+}
+
+/*[ 7 linksonder ]*/
+
+.schuin7linksonder {
+    x
+}
+
+.horizontaal7linksonder {
+    x
+}
+
+.schaduw7linksonder {
+    x
+}
+
+/*[ 7 rechtsboven ]*/
+
+.schaduw7rechtsboven {
+    x
+}
+
+.horizontaal7rechtsboven {
+    x
+}
+
+.schuin7rechtsboven {
+    x
+}
+
+/*[ 4 boven ]*/
+
+.horizontaal4boven {
+    x
+}
+
+.schuin4boven {
+    x
+}
+
+.verticaal4boven {
+    x
+}
+
+.schaduw4boven {
+    x
+}
+
+/*[ 7 linksboven ]*/
+
+.schaduw7linksboven {
+    x
+}
+
+.schuin7linksboven {
+    x
+}
+
+.horizontaal7linksboven {
+    x
+}
+
+
+/*_____________________________________________________________[ kleuren ]____________________________________________________*/
+
+.st0 {
+    fill: #02060C;
+    -webkit-transition: fill 2s;
+}
+
+.st1 {
+    fill: #3E7C00;
+    -webkit-transition: fill 2s;
+}
+
+.st2 {
+    fill: #42266E;
+    -webkit-transition: fill 2s;
+}
+
+.st3 {
+    fill: #836898;
+    -webkit-transition: fill 2s;
+}
+
+.st4 {
+    fill: #7A5600;
+    -webkit-transition: fill 2s;
+}
+
+.st5 {
+    fill: #FFA600;
+    -webkit-transition: fill 2s;
+}
+
+.st6 {
+    fill: #8D8867;
+    -webkit-transition: fill 2s;
+}
+
+.st7 {
+    fill: #494138;
+    -webkit-transition: fill 2s;
+}
+
+.st8 {
+    fill: #FF0000;
+    -webkit-transition: fill 2s;
+}
+
+.st9 {
+    fill: #D6005D;
+    -webkit-transition: fill 2s;
+}
+
+.st10 {
+    fill: #007FA9;
+    -webkit-transition: fill 2s;
+}
+
+.st11 {
+    fill: #787845;
+    -webkit-transition: fill 2s;
+}
+
+.st12 {
+    fill: #443314;
+    -webkit-transition: fill 2s;
+}
+
+.st13 {
+    fill: #104E00;
+    -webkit-transition: fill 2s;
+}
+
+.st14 {
+    fill: #24379E;
+    -webkit-transition: fill 2s;
+}
+
+.st15 {
+    fill: #4A628D;
+    -webkit-transition: fill 2s;
+}
+
+.st16 {
+    fill: #BCA96D;
+    -webkit-transition: fill 2s;
+}
+
+.st17 {
+    fill: #917611;
+    -webkit-transition: fill 2s;
+}
+
+.st18 {
+    fill: #405BA7;
+    -webkit-transition: fill 2s;
+}
+
+.st19 {
+    fill: #379B97;
+    -webkit-transition: fill 2s;
+}
+
+.st20 {
+    fill: #675C2A;
+    -webkit-transition: fill 2s;
+}
+
+.st21 {
+    fill: #474518;
+    -webkit-transition: fill 2s;
+}
+
+.st22 {
+    fill: #20370B;
+    -webkit-transition: fill 2s;
+}
+
+.whitehover:hover {
+    fill: white;
+    -webkit-transition: fill 0s;
+}
+
+.whitehover:active {
+    fill: black;
+}
+
+
+
+@media only screen and (max-width: 812px) {
+
+    #svgdesktop {
+        display: none;
+    }
+
+    #svgmobile {
+        display: block;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 8px;
+        left: 130px;
+        top: -26px;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 14px;
+        position: relative;
+        top: -20px;
+    }
+}
