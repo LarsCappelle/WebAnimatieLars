@@ -15,9 +15,17 @@ h1 {
     color: #24379e;
     margin: 20px;
     letter-spacing: -4px;
+    animation: h1animatie 2s linear infinite alternate;
+    position: relative;
+    top: 0px;
 }
 
-h1 > span {
+@keyframes h1animatie {
+    from {top: 0px;}
+  to {top: -20px;}
+}
+
+#landmidden {
     color: red;
 }
 
@@ -48,6 +56,40 @@ svg {
     margin: auto;
 }
 
+#landen {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+button {
+    background: #b6bdb2;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    width: 180px;
+    margin: 10px;
+    box-shadow: 0px 3px 0px #a2aa9f;
+    transition: width 0.2s, background 0.2s;
+    animation: buttonanimatie 1s infinite alternate;
+    position: relative;
+    top: 0px;
+}
+
+@keyframes buttonanimatie {
+    from {top: 0px;}
+  to {top: -10px;}
+}
+
+button:focus {
+    width: 200px;
+    background: #a2aa9f;
+}
+
 #svgdesktop {
     display: block;
 }
@@ -55,6 +97,14 @@ svg {
 #svgmobile {
     display: none;
     width: 400px;
+}
+
+rect {
+    transition: width 1s;
+}
+
+rect:hover {
+    width: 230px;
 }
 
 /*_____________________________________________________________[ groepen ]____________________________________________________*/
@@ -252,6 +302,7 @@ svg {
 .st19 {
     fill: #379B97;
     -webkit-transition: fill 2s;
+    transform: scale(1.0,1.0);
 }
 
 .st20 {
@@ -269,15 +320,27 @@ svg {
     -webkit-transition: fill 2s;
 }
 
+.whitehover {
+    transition: 1s;
+}
+
 .whitehover:hover {
     fill: white;
     -webkit-transition: fill 0s;
 }
 
+/*
 .whitehover:active {
-    fill: black;
+    transform: scale(1.5,1.5);
+    transform-origin: 20px 20px;
+    transform: rotate(1deg);
+    transition: 1s;
 }
+*/
 
+.test {
+    fill: gray;
+}
 
 
 @media only screen and (max-width: 812px) {
