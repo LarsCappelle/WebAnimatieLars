@@ -1,5 +1,6 @@
-console.log("hello");
+console.log("test");
 
+// addEvent zorgt voor defination van toets input event.
 var addEvent = document.addEventListener ? function(target,type,action){
     if(target){
         target.addEventListener(type,action,false);
@@ -10,6 +11,7 @@ var addEvent = document.addEventListener ? function(target,type,action){
     }
 }
 
+// zodra je toets D indrukt, welke gelijk staat aan toetscode 68, wordt de functie dutchit() opgeroepen. Alshet niet toets 68 is, gebeurd er niks.
 addEvent(document,'keydown',function(e){
     e = e || window.event;
     var key = e.which || e.keyCode;
@@ -18,6 +20,7 @@ addEvent(document,'keydown',function(e){
     }
 });
 
+// De drie onderstaande addEvents werken hetzelfde als die hierboven maar dan voor ander toetsen.
 addEvent(document,'keydown',function(e){
     e = e || window.event;
     var key = e.which || e.keyCode;
@@ -42,23 +45,16 @@ addEvent(document,'keydown',function(e){
     }
 });
 
-function kleur() {
-//    document.getElementsByClassName("st5").className = "test";
-//    document.getElementsByClassName("st5").classList.add('test');
-//    document.getElementById("gucci").classList.add('test');
-    "use strict";
-    document.getElementById("gucci").style.fill = 'yellow';
-}
 
+//function kleur() {
+////    document.getElementsByClassName("st5").className = "test";
+////    document.getElementsByClassName("st5").classList.add('test');
+////    document.getElementById("gucci").classList.add('test');
+//    "use strict";
+//    document.getElementById("gucci").style.fill = 'yellow';
+//}
 
-function color() {
-//    document.getElementsByClassName("st5").className = "test";
-//    document.getElementsByClassName("st5").classList.add('test');
-//    document.getElementById("gucci").classList.add('test');
-    "use strict";
-    document.getElementsByClassName("st5").style.fill = 'yellow';
-}
-
+// De 4 ...it functies replacen wat kleuren en tekst voor het betreffende land.
 function dutchit() {
     document.getElementById("landlinks").style.color = 'red';
     document.getElementById("landmidden").style.color = 'white';
@@ -98,4 +94,44 @@ function americanit() {
     document.getElementById("landrechts").style.color = '#24379E'; 
     document.getElementById("datum").innerHTML = "March 1970";
     document.getElementById("ondertitel").innerHTML = "Can man survive? / Pearl Buck / Safari on the range";
+}
+
+
+//Bron voor dit stukje code: https://www.w3schools.com/howto/howto_js_draggable.asp
+dragElement(document.getElementById("landen"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+    //Function dragElement zorgt ervoor dat je het betreffende element kan slepen.
+      elmnt.onmousedown = dragMouseDown;
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+     // Muispositie verkrijgen op moment dat de pagina laad.
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // Zodra je muis beweegt start dragElement
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // Bereken de nieuwe positie van je muiscursor.
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // Zet betreffende element op de nieuwe positie.
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    // Stop met het bewegen van het betreffende element zodra niet meer is ingedrukt.
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
 }
