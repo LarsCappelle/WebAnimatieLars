@@ -38,6 +38,7 @@ h2 {
     width: 100px;
     margin: 0 auto;
     left: 220px;
+    animation: h2animatie 2s linear infinite alternate-reverse;
 }
 
 h3 {
@@ -46,6 +47,20 @@ h3 {
     font-size: 25px;
     position: relative;
     top: -20px;
+    animation: h3animatie 2s linear infinite alternate;
+    position: relative;
+    top: 0px;
+}
+
+@keyframes h2animatie {
+    from {top: -30px;}
+  to {top: -40px;}
+}
+
+
+@keyframes h3animatie {
+    from {top: 0px;}
+  to {top: -35px;}
 }
 
 svg {
@@ -118,6 +133,7 @@ rect {
 rect:hover {
     width: 230px;
 }
+
 
 /*_____________________________________________________________[ groepen ]____________________________________________________*/
 
@@ -350,8 +366,12 @@ rect:hover {
 }
 */
 
-.test {
-    fill: gray;
+.fillwhite {
+    fill: white;
+}
+
+.fillblack {
+    fill: black;
 }
 
 @media only screen and (max-width: 1200px) {
