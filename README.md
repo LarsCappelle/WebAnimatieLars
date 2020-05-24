@@ -2,18 +2,18 @@
 Link naar eindoplevering:
 https://larscappelle.github.io/WebAnimatieLars/
 
-<h2>Opdracht<h2>
+<h2>Opdracht</h2>
 Voor het vak Web Animaties moeten we een kunstwerk uit het Letterform-archief of het AIGA-archief uitkiezen en dat vertalen naar het web. Het doel is om er een interactieve webpagina van te maken waarbij de gebruiker bijvoorbeeld over het kunstwerk kan hoveren, klikken en toetsen indrukken. 
 
-<h2>Kunstwerk<h2>
+<h2>Kunstwerk</h2>
 Het kunstwerk dat ik heb vertaald naar het web is “The American Way Magazine” uit maart 1970. De reden dat ik voor dit kunstwerk heb gekozen is omdat ik veel mogelijkheden met alle lijnen waar het kunstwerk uit bestaat. Het is een vrij simpele vector, alleen bevat aan de andere kant veel verschillende vormen waar mee gespeeld kan worden.
 
-<h2>Over het kunstwerk<h2>
+<h2>Over het kunstwerk</h2>
 The American Way Magazine is een magazineblad gemaakt voor American Airlines (opdrachtgever Juan Homes), en het gekozen kunstwerk is de cover geweest voor het blad. Het is ontworpen door Bjarne Martin Pedersen, een grafisch ontwerper van 84 jaar uit Noorwegen. Hij heeft hulp gehad van Illustrator Guissepi Lucci en editor Don Moffit.
 
 American Way was groot in vliegtuigen in de jaren '70: Er zijn meerdere kunstwerken zoals het gekozen kunstwerk gemaakt. Gek genoeg heb ik nergens op internet iets kunnen vinden van deze specifieke uitgave van TheAmericanWay, maar wel over andere uitgaves. Een uitgave van oktober 1970 bijvoorbeeld, was gewijd aan de nieuwe Boeing 747, terwijl het coververhaal in september '71 de nieuwe McDonnell Douglas DC-10 was. Hieruit maak ik op dat mijn gekozen kunstwerk ook iets te maken heeft met een Boeing 747, omdat dit getal tweemaal te vinden is op het kunstwerk. Ook heb ik in het AIGA-archief meerdere uitgaves van TheAmericanWay gevonden gemaakt door B. Martin Pedersen.
 
-Vertaling naar digitaal/ interactie
+<h3>Vertaling naar digitaal/ interactie</h3>
 Ik heb het kunstwerk uiteindelijk digitaal gemaakt en de volgende interactieve elementen toegepast:
 
 De 747-747 svg
