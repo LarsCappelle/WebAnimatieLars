@@ -16,7 +16,7 @@ h1 {
     color: #24379e;
     margin: 20px;
     letter-spacing: -4px;
-    animation: h1animatie 2s linear infinite alternate;
+    -webkit-animation: h1animatie 2s linear infinite alternate;
     position: relative;
     top: 0px;
 }
@@ -38,7 +38,7 @@ h2 {
     width: 100px;
     margin: 0 auto;
     left: 220px;
-    animation: h2animatie 2s linear infinite alternate-reverse;
+    -webkit-animation: h2animatie 2s linear infinite alternate-reverse;
 }
 
 h3 {
@@ -47,7 +47,7 @@ h3 {
     font-size: 25px;
     position: relative;
     top: -20px;
-    animation: h3animatie 2s linear infinite alternate;
+    -webkit-animation: h3animatie 2s linear infinite alternate;
     position: relative;
     top: 0px;
 }
@@ -95,8 +95,9 @@ button {
     width: 180px;
     margin: 10px;
     box-shadow: 0px 3px 0px #868E81;
-    transition: width 0.2s, background 0.2s;
-    animation: buttonanimatie 1s infinite alternate;
+    -webkit-transition-property: width, background;
+    -webkit-transition-duration: 0.2s;
+    -webkit-animation: buttonanimatie 1s infinite alternate;
     position: relative;
     top: 0px;
 }
@@ -389,7 +390,7 @@ rect:hover {
     }
 
 
-@media only screen and (max-width: 812px) {
+@media only screen and (max-width: 814px) {
     
     #svgwide {
         display: none;

@@ -2,48 +2,6 @@
 /*eslint-env browser*/
 /*eslint 'no-console':0*/
 
-//Bron voor dit stukje code: https://www.w3schools.com/howto/howto_js_draggable.asp
-dragElement(document.getElementById("tekst"));
-
-function dragElement(elmnt) {
-    var pos1 = 0,
-        pos2 = 0,
-        pos3 = 0,
-        pos4 = 0;
-    //Function dragElement zorgt ervoor dat je het betreffende element kan slepen.
-    elmnt.onmousedown = dragMouseDown;
-
-    function dragMouseDown(e) {
-        e = e || window.event;
-        e.preventDefault();
-        // Muispositie verkrijgen op moment dat de pagina laad.
-        pos3 = e.clientX;
-        pos4 = e.clientY;
-        document.onmouseup = closeDragElement;
-        // Zodra je muis beweegt start dragElement
-        document.onmousemove = elementDrag;
-    }
-
-    function elementDrag(e) {
-        e = e || window.event;
-        e.preventDefault();
-        // Bereken de nieuwe positie van je muiscursor.
-        pos1 = pos3 - e.clientX;
-        pos2 = pos4 - e.clientY;
-        pos3 = e.clientX;
-        pos4 = e.clientY;
-        // Zet betreffende element op de nieuwe positie.
-        elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-        elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-    }
-
-    function closeDragElement() {
-        // Stop met het bewegen van het betreffende element zodra niet meer is ingedrukt.
-        document.onmouseup = null;
-        document.onmousemove = null;
-    }
-}
-
 // De const innerxxx code roept alle landen die NIET bij een bepaald land op zodat ze bij de functie van een land kunnen worden vervangen met wit of zwart en daardoor alleen de kleuren van het betreffende land overblijven.
 var innerdutch = document.querySelectorAll('.st1, .st2, .st3, .st4, .st5, .st6, .st11, .st12, .st13, .st16, .st17, .st20, .st21, .st22');
 
@@ -186,3 +144,46 @@ addEvent(document, 'keydown', function (e) {
         americanit();
     }
 });
+
+
+//Bron voor dit stukje code: https://www.w3schools.com/howto/howto_js_draggable.asp
+dragElement(document.getElementById("landen"));
+
+function dragElement(elmnt) {
+    var pos1 = 0,
+        pos2 = 0,
+        pos3 = 0,
+        pos4 = 0;
+    //Function dragElement zorgt ervoor dat je het betreffende element kan slepen.
+    elmnt.onmousedown = dragMouseDown;
+
+    function dragMouseDown(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // Muispositie verkrijgen op moment dat de pagina laad.
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        document.onmouseup = closeDragElement;
+        // Zodra je muis beweegt start dragElement
+        document.onmousemove = elementDrag;
+    }
+
+    function elementDrag(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // Bereken de nieuwe positie van je muiscursor.
+        pos1 = pos3 - e.clientX;
+        pos2 = pos4 - e.clientY;
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        // Zet betreffende element op de nieuwe positie.
+        elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+        elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+    }
+
+    function closeDragElement() {
+        // Stop met het bewegen van het betreffende element zodra niet meer is ingedrukt.
+        document.onmouseup = null;
+        document.onmousemove = null;
+    }
+}
