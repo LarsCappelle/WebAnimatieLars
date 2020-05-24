@@ -8,6 +8,8 @@ Voor het vak Web Animaties moeten we een kunstwerk uit het Letterform-archief of
 <h2>Kunstwerk</h2>
 Het kunstwerk dat ik heb vertaald naar het web is “The American Way Magazine” uit maart 1970. De reden dat ik voor dit kunstwerk heb gekozen is omdat ik veel mogelijkheden met alle lijnen waar het kunstwerk uit bestaat. Het is een vrij simpele vector, alleen bevat aan de andere kant veel verschillende vormen waar mee gespeeld kan worden.
 
+Link: https://designarchives.aiga.org/#/entries/%2Bcollections%3A%22B.%20Martin%20Pedersen%22/_/detail/relevance/asc/8/7/21995/the-american-way-magazine-march-1970/1
+
 <h2>Over het kunstwerk</h2>
 The American Way Magazine is een magazineblad gemaakt voor American Airlines (opdrachtgever Juan Homes), en het gekozen kunstwerk is de cover geweest voor het blad. Het is ontworpen door Bjarne Martin Pedersen, een grafisch ontwerper van 84 jaar uit Noorwegen. Hij heeft hulp gehad van Illustrator Guissepi Lucci en editor Don Moffit.
 
