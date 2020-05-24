@@ -1,6 +1,5 @@
 # Web Animatie Lars
-Code voor het vak webanimaties
-
+Link naar eindoplevering:
 https://larscappelle.github.io/WebAnimatieLars/
 
 # Opdracht
