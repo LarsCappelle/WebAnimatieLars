@@ -25,7 +25,7 @@ De titel en subtitels
 De titels heb ik met een animatie op en neer laten zweven. Ook worden ze door buttons gemanipuleerd tot alternatieve titels. Er zijn 4 titels in totaal en elke titel is een eigen taal. 
 
 # Proces
-<h2>Eerste Ideëen<h2>
+<h2>Eerste Ideëen</h2>
 Mijn eerste idee was om het kunstwerk erg “spacend” te maken door de lijnen op allemaal manieren te laten veranderen van grootte en kleur etc. Ik had nog niet echt plannen met de tekst van het kunstwerk maar dat zou nog wel komen.
 
 <h2>Eerste versie (week 1)</h2>
