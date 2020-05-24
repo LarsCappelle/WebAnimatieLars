@@ -5,7 +5,7 @@ https://larscappelle.github.io/WebAnimatieLars/
 # Opdracht
 Voor het vak Web Animaties moeten we een kunstwerk uit het Letterform-archief of het AIGA-archief uitkiezen en dat vertalen naar het web. Het doel is om er een interactieve webpagina van te maken waarbij de gebruiker bijvoorbeeld over het kunstwerk kan hoveren, klikken en toetsen indrukken. 
 
-# Kunstwerk
+# <h2>Kunstwerk<h2>
 Het kunstwerk dat ik heb vertaald naar het web is “The American Way Magazine” uit maart 1970. De reden dat ik voor dit kunstwerk heb gekozen is omdat ik veel mogelijkheden met alle lijnen waar het kunstwerk uit bestaat. Het is een vrij simpele vector, alleen bevat aan de andere kant veel verschillende vormen waar mee gespeeld kan worden.
 
 # Over het kunstwerk:
@@ -82,3 +82,6 @@ Kunstwerk zelf: https://designarchives.aiga.org/#/entries/%2Bcollections%3A%22B.
 Info over auteur kunstwerk: http://adcglobal.org/hall-of-fame/b-martin-pedersen/
 Info over kunstwerk: https://americanway.com/en/features/2017/05/the-big-50
 
+Code:
+Toetsenbord input: https://stackoverflow.com/questions/14261062/js-function-when-keyboard-key-is-pressed
+Drag opbject: https://www.w3schools.com/howto/howto_js_draggable.asp 
