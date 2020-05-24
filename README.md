@@ -64,9 +64,19 @@ Update: uiteindelijk is de code iets ingewikkelder geworden omdat er niet alleen
 
 
 # Wat heb ik geleerd
-- Ik heb geleerd wat de beperkingen en mogelijkheden van een svg zijn, en hoe XML tags zoals <g> en <poly> verschillen van HTML tags.
-- Ik heb geleerd hoe je met Javascript meerdere classes in 1 keer kan vervangen met een andere class.
-- Ik heb geleerd hoe animatie en bijbehorende keyframes werken in CSS en wat het verschil is met een transitie.
+-	Ik heb geleerd wat de beperkingen en mogelijkheden van een svg zijn, en hoe XML tags zoals <g> en <poly> verschillen van HTML tags.
+-	Ik heb geleerd hoe je met Javascript meerdere classes in 1 keer kan vervangen met een andere class.
+-	Ik heb geleerd hoe animatie en bijbehorende keyframes werken in CSS en wat het verschil is met een transitie.
+-	Javascript is voor mij weer wat duidelijker geworden en ik zie er nog meer logica in dan eerst.
+-	Ik begrijp nu wat webkit en gecko is en wat de toegevoegde waarde is van -webkit- in je css zetten.
+-	Ik weet nu de JS-code om een toetsenbord input aan je website toe te voegen.
+-	Ik heb voor dit vak meer gebruik gemaakt van devtools en het nut hiervan ontdekt.
+
+# Wat zou ik nog graag hebben geleerd/ uitgevoerd
+-	Ik weet hoe je d.m.v. regels als transform en transform-origin etc. een vector kan veranderen. Sterker nog, ik heb met veel van deze effecten geëxperimenteerd. Helaas is het mij niet gelukt om de vectoren op hun eigen as te transformeren maar schoten ze steeds van hun plaats. Dit komt waarschijnlijk vanwege de viewbox die om een SVG zit. 
+-	Ik weet hoe je svg vectoren van plaats kan veranderen dmv css (transform: translate(px, px);) alleen heb ik dit niet uitgevoerd in mijn media querys omdat ik maar liefst 90 losse vectoren/shapes had en het ongelofelijk veel tijd zou innemen om deze allemaal voor 3 media querys in te stellen. Ik heb van alle vormen groepen gemaakt d.m.v. de <g> tag in de hoop dat je een groep als geheel van plaats zou kunnen veranderen met transform, alleen dit was helaas niet het geval. Ik had graag meer tijd besteed aan het zoeken naar een oplossing hiervoor en meer te verdiepen in wat je allemaal wél met de <g> tag kan, want deze kon bijzonder weinig CSS hebben merkte ik. Helaas heb ik niet genoeg tijd gehad om hierachter te komen.
+-	Ik had graag nog gekeken naar hoe je op mobiel iets kan laten gebeuren door van verticaal naar landscape te gaan, alleen ook hier had ik geen tijd meer voor.
+
 
 # Bronnen
 Kunstwerk zelf: https://designarchives.aiga.org/#/entries/%2Bcollections%3A%22B.%20Martin%20Pedersen%22/_/detail/relevance/asc/8/7/21995/the-american-way-magazine-march-1970/1
