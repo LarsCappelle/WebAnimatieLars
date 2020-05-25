@@ -99,52 +99,21 @@ function americanit() {
     })
 }
 
-
-// addEvent zorgt voor defination van toets input event.
-var addEvent = document.addEventListener ? function (target, type, action) {
-    if (target) {
-        target.addEventListener(type, action, false);
-    }
-} : function (target, type, action) {
-    if (target) {
-        target.attachEvent('on' + type, action, false);
-    }
-};
-
-// zodra je toets D indrukt, welke gelijk staat aan toetscode 68, wordt de functie dutchit() opgeroepen. Alshet niet toets 68 is, gebeurd er niks.
-addEvent(document, 'keydown', function (e) {
-    e = e || window.event;
-    var key = e.which || e.keyCode;
+//De code hieronder zorgt ervoor dat de dutchit, germanit, etc. functies ook dmv een keyboard input worden geactiveerd.
+document.addEventListener('keydown', event => {
+    //const key = event.wich || event.keycode is om bij meerdere browsers het werkend te krijgen. Sommige browsers kennen wich niet maar keycode wel, dus die || staat voor de OR operator dus als de ene er niet is pakt hij de ander
+    const key = event.wich || event.keyCode
+//hier wordt gekeken naar welke van de 4 landenfuncties moeten worden opgeroepen.
     if (key === 68) {
         dutchit();
-    }
-});
-
-// De drie onderstaande addEvents werken hetzelfde als die hierboven maar dan voor ander toetsen.
-addEvent(document, 'keydown', function (e) {
-    e = e || window.event;
-    var key = e.which || e.keyCode;
-    if (key === 71) {
+    } else if (key === 71) {
         germanit();
-    }
-});
-
-addEvent(document, 'keydown', function (e) {
-    e = e || window.event;
-    var key = e.which || e.keyCode;
-    if (key === 73) {
+    } else if (key === 73) {
         italianit();
-    }
-});
-
-addEvent(document, 'keydown', function (e) {
-    e = e || window.event;
-    var key = e.which || e.keyCode;
-    if (key === 65) {
+    } else if (key === 65) {
         americanit();
     }
-});
-
+})
 
 //Bron voor dit stukje code: https://www.w3schools.com/howto/howto_js_draggable.asp
 dragElement(document.getElementById("landen"));
